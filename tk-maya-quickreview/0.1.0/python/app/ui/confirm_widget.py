@@ -1,0 +1,111 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'confirm_widget.ui'
+#
+#      by: pyside-uic 0.2.13 running on PySide 1.1.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from tank.platform.qt import QtCore, QtGui
+
+class Ui_ConfirmWidget(object):
+    def setupUi(self, ConfirmWidget):
+        ConfirmWidget.setObjectName("ConfirmWidget")
+        ConfirmWidget.resize(553, 262)
+        self.gridLayout_2 = QtGui.QGridLayout(ConfirmWidget)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.gridLayout = QtGui.QGridLayout()
+        self.gridLayout.setObjectName("gridLayout")
+        self.notes_edit = QtGui.QTextEdit(ConfirmWidget)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.notes_edit.sizePolicy().hasHeightForWidth())
+        self.notes_edit.setSizePolicy(sizePolicy)
+        self.notes_edit.setBaseSize(QtCore.QSize(0, 0))
+        self.notes_edit.setObjectName("notes_edit")
+        self.gridLayout.addWidget(self.notes_edit, 2, 3, 2, 4)
+        spacerItem = QtGui.QSpacerItem(10, 10, QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem, 0, 7, 6, 1)
+        self.logo_example = QtGui.QLabel(ConfirmWidget)
+        self.logo_example.setText("")
+        self.logo_example.setPixmap(QtGui.QPixmap(":/res/sg_logo.png"))
+        self.logo_example.setAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
+        self.logo_example.setObjectName("logo_example")
+        self.gridLayout.addWidget(self.logo_example, 1, 1, 4, 1)
+        self.version_name = QtGui.QLabel(ConfirmWidget)
+        font = QtGui.QFont()
+        font.setFamily("Helvetica")
+        font.setPointSize(14)
+        font.setWeight(75)
+        font.setBold(True)
+        self.version_name.setFont(font)
+        self.version_name.setText("")
+        self.version_name.setObjectName("version_name")
+        self.gridLayout.addWidget(self.version_name, 1, 3, 1, 3)
+        spacerItem1 = QtGui.QSpacerItem(10, 10, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem1, 5, 1, 1, 6)
+        self.version_lbl = QtGui.QLabel(ConfirmWidget)
+        self.version_lbl.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.version_lbl.setObjectName("version_lbl")
+        self.gridLayout.addWidget(self.version_lbl, 1, 2, 1, 1)
+        spacerItem2 = QtGui.QSpacerItem(10, 10, QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem2, 0, 0, 6, 1)
+        self.notes_lbl = QtGui.QLabel(ConfirmWidget)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.notes_lbl.sizePolicy().hasHeightForWidth())
+        self.notes_lbl.setSizePolicy(sizePolicy)
+        self.notes_lbl.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.notes_lbl.setObjectName("notes_lbl")
+        self.gridLayout.addWidget(self.notes_lbl, 2, 2, 1, 1)
+        spacerItem3 = QtGui.QSpacerItem(10, 10, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem3, 0, 1, 1, 6)
+        self.open_btn = QtGui.QPushButton(ConfirmWidget)
+        self.open_btn.setMaximumSize(QtCore.QSize(32, 32))
+        self.open_btn.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/res/open_btn.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.open_btn.setIcon(icon)
+        self.open_btn.setFlat(True)
+        self.open_btn.setObjectName("open_btn")
+        self.gridLayout.addWidget(self.open_btn, 1, 6, 1, 1)
+        spacerItem4 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem4, 3, 2, 2, 1)
+        self.button_layout = QtGui.QHBoxLayout()
+        self.button_layout.setObjectName("button_layout")
+        spacerItem5 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.button_layout.addItem(spacerItem5)
+        self.submit_btn = QtGui.QPushButton(ConfirmWidget)
+        self.submit_btn.setToolTip("")
+        self.submit_btn.setObjectName("submit_btn")
+        self.button_layout.addWidget(self.submit_btn)
+        self.cancel_btn = QtGui.QPushButton(ConfirmWidget)
+        self.cancel_btn.setObjectName("cancel_btn")
+        self.button_layout.addWidget(self.cancel_btn)
+        self.gridLayout.addLayout(self.button_layout, 4, 3, 1, 4)
+        self.gridLayout.setColumnStretch(3, 1)
+        self.gridLayout.setColumnStretch(4, 1)
+        self.gridLayout.setColumnStretch(5, 1)
+        self.gridLayout.setColumnStretch(6, 1)
+        self.gridLayout.setRowStretch(3, 1)
+        self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
+
+        self.retranslateUi(ConfirmWidget)
+        QtCore.QMetaObject.connectSlotsByName(ConfirmWidget)
+
+    def retranslateUi(self, ConfirmWidget):
+        ConfirmWidget.setWindowTitle(QtGui.QApplication.translate("ConfirmWidget", "Quickdailies", None, QtGui.QApplication.UnicodeUTF8))
+        self.notes_edit.setToolTip(QtGui.QApplication.translate("ConfirmWidget", "Summarize the work you\'ve done.", None, QtGui.QApplication.UnicodeUTF8))
+        self.notes_edit.setHtml(QtGui.QApplication.translate("ConfirmWidget", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'.Helvetica Neue DeskInterface\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
+        self.version_lbl.setText(QtGui.QApplication.translate("ConfirmWidget", "Version:", None, QtGui.QApplication.UnicodeUTF8))
+        self.notes_lbl.setText(QtGui.QApplication.translate("ConfirmWidget", "Notes:", None, QtGui.QApplication.UnicodeUTF8))
+        self.submit_btn.setText(QtGui.QApplication.translate("ConfirmWidget", "Submit for Review", None, QtGui.QApplication.UnicodeUTF8))
+        self.cancel_btn.setText(QtGui.QApplication.translate("ConfirmWidget", "Cancel", None, QtGui.QApplication.UnicodeUTF8))
+
+from . import resources_rc

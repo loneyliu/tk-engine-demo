@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="res">
+    <file>sg_logo.png</file>
+    <file>sg_logo_error.png</file>
+    <file>open_btn.png</file>
+  </qresource>
+</RCC>
